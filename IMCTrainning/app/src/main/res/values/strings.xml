@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">IMC Trainning</string>
+    <string name="digite_a_altura">digite a altura</string>
+    <string name="digite_o_peso">digite o peso</string>
+    <string name="calculo_do_imc">Calculo do IMC</string>
+    <string name="btn_calcular">Calcular</string>
+    <string name="imc_visual">imagem com visual do imc</string>
 </resources>
