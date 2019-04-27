@@ -1,5 +1,6 @@
 package casanova.gabriel.imctrainning;
 
+import android.graphics.drawable.Drawable;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -43,22 +44,30 @@ public class MainActivity extends AppCompatActivity {
                     double imc = pesoD / (alturaD * alturaD);
 
                     String mensagem;
+                    Drawable foto;
 
                     if (imc < 18.5) {
                         mensagem = "Magreza";
+                        foto = getDrawable(R.drawable.magreza);
                     } else if (imc < 24.9) {
-                        mensagem = "Saudavel";
+                        mensagem = "Saudável";
+                        foto = getDrawable(R.drawable.abaixo);
                     } else if (imc < 29.9) {
                         mensagem = "Sobrepeso";
+                        foto = getDrawable(R.drawable.ideal);
                     } else if (imc < 34.9) {
                         mensagem = "Obesidade Grau I";
+                        foto = getDrawable(R.drawable.sobre);
                     } else if (imc < 39.9) {
                         mensagem = "Obesidade Grau II";
+                        foto = getDrawable(R.drawable.obesidade);
                     } else {
                         mensagem = "Obesidade Grau III";
+                        foto = getDrawable(R.drawable.obesidade);
                     }
 
                     txv_resultado.setText(mensagem);
+                    img_resultado.setImageDrawable(foto);
                 }
             }
         });
