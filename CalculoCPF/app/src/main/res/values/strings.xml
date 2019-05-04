@@ -1,3 +1,5 @@
 <resources>
-    <string name="app_name">VerificarCPF</string>
+    <string name="app_name">Verificar CPF</string>
+    <string name="cpf_hint">XXX.XXX.XXX-XX</string>
+    <string name="verificar">Verificar</string>
 </resources>
