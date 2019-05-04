@@ -1,6 +1,7 @@
 package casanova.gabriel.rodiziodeveculos;
 
 import android.content.Context;
+import android.content.Intent;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -45,6 +46,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     }
 
     private void mapa() {
+        //Classe objeto = new Método construtor
+        Intent intent = new Intent(context,WebActivity.class);
+        startActivity(intent);
     }
 
     private void verificar() {
