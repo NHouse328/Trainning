@@ -19,16 +19,17 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <EditText
+    <com.santalu.maskedittext.MaskEditText
         android:id="@+id/edt_cpf"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="100dp"
-        android:ems="10"
+        android:ems="11"
+        app:met_mask="###.###.###-##"
         android:hint="@string/cpf_hint"
         android:inputType="number"
         android:textAlignment="center"
-        android:maxLength="11"
+        android:maxLength="14"
         app:layout_constraintEnd_toEndOf="@+id/img_layout"
         app:layout_constraintStart_toStartOf="@+id/img_layout"
         app:layout_constraintTop_toBottomOf="@+id/textView" />

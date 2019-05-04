@@ -8,10 +8,12 @@ import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.Toast;
 
+import com.santalu.maskedittext.MaskEditText;
+
 public class MainActivity extends AppCompatActivity {
 
     //Declarando componentes
-    private EditText  edt_cpf;
+    private MaskEditText edt_cpf;
     private ImageView img_cpf;
     private Vibrator vibrator;
 
@@ -28,9 +30,9 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void onVerificar(View view) {
-        String cpf = edt_cpf.getEditableText().toString().trim();
+        String cpf = edt_cpf.getRawText();
 
-        if (cpf.length() < 11) {
+        if (cpf == null || cpf.length() < 11) {
             Toast.makeText(this,"Digite um CPF com 11 números",Toast.LENGTH_LONG).show();
             vibrator.vibrate(500);
         } else {
