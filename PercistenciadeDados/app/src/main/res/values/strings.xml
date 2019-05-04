@@ -1,3 +1,12 @@
 <resources>
     <string name="app_name">Percistencia de Dados</string>
+    <string name="email">Email</string>
+    <string name="senha">Senha</string>
+    <string name="entrar">Entrar</string>
+    <string name="cadastrar">Cadastrar</string>
+    <string name="nome">Nome</string>
+    <string name="criar">Criar</string>
+    <string name="email_email_com">email@email.com</string>
+    <string name="senha_hint">********</string>
+    <string name="fulano_de_tal">Fulano de Tal</string>
 </resources>
