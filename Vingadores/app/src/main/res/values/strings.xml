@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">Vingadores</string>
+    <string name="mais_detalhes">Clique para mais detalhes !</string>
+    <string name="nome_vingador">Name</string>
+    <string name="vingador_image_description">Vingador Image</string>
 </resources>
