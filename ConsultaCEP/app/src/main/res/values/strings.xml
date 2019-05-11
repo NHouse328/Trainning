@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">Consulta CEP</string>
+    <string name="cep">CEP</string>
+    <string name="bairro">Bairro</string>
+    <string name="complemento">Complemento</string>
+    <string name="n">Nº</string>
+    <string name="logradouro">Logradouro</string>
+    <string name="endere_o">Endereço</string>
+    <string name="cidade">Cidade</string>
 </resources>
